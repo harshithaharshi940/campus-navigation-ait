@@ -1,0 +1,75 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Landing page */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.landing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.college-name {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Map page */
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 5px;
+}
+#map {
+  position: relative;
+  width: 1000px;  /* Fixed width */
+  height: 700px;  /* Fixed height */
+  background: url('image/campus-map.png') no-repeat center/contain;
+  margin: auto;
+}
+
+/* Markers */
+.marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.marker.start { background: blue; }
+.marker.end { background: red; }
+
+/* Route line */
+.route-line {
+  position: absolute;
+  height: 2px;
+  background: yellow;
+  transform-origin: 0 0;
+}
